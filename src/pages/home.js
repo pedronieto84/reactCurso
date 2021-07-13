@@ -33,7 +33,7 @@ class HomePage extends Component {
           const infoAdded = (eachItem.info.length > 0 ) ?  eachItem.info.reduce((a, b)=> a + ' ' + b) : ' '
           const stringAllTogether = `${tagsAdded} ${infoAdded} ${eachItem.title}`
           const stringWithoutAccents = removeAccents(stringAllTogether)
-          return stringWithoutAccents.includes(value)
+          return stringWithoutAccents.includes(removeAccents(value))
         }
 
 

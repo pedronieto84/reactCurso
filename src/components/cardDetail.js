@@ -31,7 +31,7 @@ const CardDetailComponent = (props) => {
               })
             }
  </ul>
-
+    <img src={ props.img } />
     <p className="lead">
     
     <Link className="fixed-bottom btn btn-primary btn-lg" to={'/'}>Tornar</Link>

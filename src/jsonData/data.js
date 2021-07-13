@@ -119,7 +119,7 @@ const data = [
             'Al arxiu “app.js” canvia la paraula  “editar” y guarda, obre localhost:3000 i veuràs el canvi automàticament'
         ],
         tags: ['file structure', 'folder structure'],
-        img: ''
+        img: './assets/1.png'
     },{
         id: 13,
         title: 'Comandaments basics',
@@ -132,7 +132,7 @@ const data = [
             'npm install: Instala/ reinstala/ actualitza totes les dependencias definides al package.json'
         ],
         tags: ['npm install', 'npm start', 'npm build'],
-        img: ''
+        img: './assets/2.png'
     }, {
         id: 14,
         title: 'Jsx',
@@ -147,7 +147,7 @@ const data = [
 
         ],
         tags: ['jsx', 'xml'],
-        img: ''
+         img: './assets/3.png'
     },
     {
         id: 15,
@@ -158,7 +158,7 @@ const data = [
 
         ],
         tags: ['curly braces', 'jsx expresions'],
-        img: ''
+        img: './assets/4.png'
     },
     {
         id: 16,
@@ -168,7 +168,7 @@ const data = [
 
         ],
         tags: ['jsx vs html', 'className'],
-        img: ''
+        img: './assets/5.png'
     },
     {
         id: 17,
@@ -176,22 +176,22 @@ const data = [
         info: [
         ],
         tags: ['jsx inline styles'],
-        img: ''
+        img: './assets/6.png'
     },
      {
         id: 18,
         title: 'Control d’events classics',
-        info: [
+        info: ['Control d’events classics, mouse click, mouse over...'
         ],
         tags: ['onClick', 'onKeyDown', 'onMouseOver'],
-        img: ''
+         img: './assets/7.png'
     }, {
         id: 19,
         title: 'Passar parametres',
         info: ['Fem servir arrow functions dins de JSX. Cuidado de no possar directament la funció(“parametre”)'
         ],
         tags: ['passar parametres'],
-        img: ''
+        img: './assets/8.png'
     }, {
         id: 20,
         title: 'Components',
@@ -207,14 +207,14 @@ const data = [
         info: [
         ],
         tags: ['components'],
-        img: ''
+        img: './assets/9.png'
     }, {
         id: 22,
         title: 'Tipus de components ',
         info: [
         ],
         tags: ['stateless', 'statefull', 'functional', 'class', 'pure', 'impure', 'container', 'presentational'],
-        img: ''
+        img: './assets/10.png'
     }, {
         id: 23,
         title: 'Components funcionals: creació',
@@ -222,14 +222,31 @@ const data = [
 
         ],
         tags: ['components funcionals creacio'],
-        img: ''
+        img: './assets/11.png'
     }, {
         id: 24,
         title: 'Components funcionals us',
         info: [
         ],
         tags: ['Components funcionals us'],
-        img: ''
+         img: './assets/12.png'
+    },
+
+     {
+        id: 230,
+        title: 'Components de clase: creació',
+        info: [
+
+        ],
+        tags: ['components de clase creacio'],
+        img: './assets/13.png'
+    }, {
+        id: 240,
+        title: 'Components de clase us',
+        info: [
+        ],
+        tags: ['Components de clase us'],
+         img: './assets/14.png'
     },
  {
         id: 25,
@@ -238,14 +255,14 @@ const data = [
 
         ],
         tags: ['clase vs funcionals'],
-        img: ''
+        img: './assets/15.png'
     }, {
         id: 26,
         title: 'Components: afegir styling',
         info: [
         ],
         tags: ['Components styling', 'components css'],
-        img: ''
+        img: './assets/16.png'
     },
      {
         id: 27,
@@ -254,7 +271,7 @@ const data = [
 
         ],
         tags: ['css locals'],
-        img: ''
+        img: './assets/17.png'
     }, {
         id: 28,
         title: 'Importar css framework',
@@ -273,8 +290,9 @@ const data = [
         info: [
             'A terminal:   npm i bootstrap'
         ],
-        tags: ['components de clase creacio'],
-        img: ''
+        tags: ['instalar bootstrap a react'],
+        img: './assets/18.png'
+         
     }, {
         id: 30,
         title: 'Implementar Bootstrap a react',
@@ -282,7 +300,7 @@ const data = [
             'Importem al index.js la ruta on son els arxius de Bootstrap'
         ],
         tags: ['Components de clase us'],
-        img: ''
+        img: './assets/19.png'
     }, {
         id: 31,
         title: 'Com passar data entre components',
@@ -290,14 +308,14 @@ const data = [
 
         ],
         tags: ['pare a fill', 'fill a pare', 'props', 'callback function props'],
-        img: ''
+        img: './assets/20.png'
     }, {
         id: 32,
         title: 'PROPS EXEMPLE pasar props a COMPONENT FUNCIONAL',
         info: [
         ],
         tags: ['props component funcional'],
-        img: ''
+          img: './assets/21.png'
     }, {
         id: 33,
         title: 'PROPS EXEMPLE rebre props a COMPONENT FUNCIONAL',
@@ -305,14 +323,14 @@ const data = [
 
         ],
         tags: ['rebre props component funcional'],
-        img: ''
+        img: './assets/22.png'
     }, {
         id: 34,
         title: 'PROPS EXEMPLE pasar props a COMPONENT de clase',
         info: [
         ],
         tags: ['passar props component de clase'],
-        img: ''
+        img: './assets/23.png'
     }, {
         id: 35,
         title: 'PROPS EXEMPLE rebre props a COMPONENT de clase',
@@ -320,14 +338,14 @@ const data = [
 
         ],
         tags: ['rebre props component de clase'],
-        img: ''
+        img: './assets/24.png'
     }, {
         id: 36,
         title: 'De fill a pare: component pare',
         info: [
         ],
         tags: ['de fill a pare'],
-        img: ''
+        img: './assets/25.png'
     },
      {
         id: 37,
@@ -335,7 +353,7 @@ const data = [
         info: [
         ],
         tags: ['de fill a pare', 'component fill'],
-        img: ''
+        img: './assets/26.png'
     },
      {
         id: 38,
@@ -344,7 +362,7 @@ const data = [
             'Hi ha 2 tipus de dades que controlen un Component: props (les hem vist) i state'
         ],
         tags: ['state'],
-        img: ''
+          img: './assets/27.png'
     },
      {
         id: 39,
@@ -352,14 +370,14 @@ const data = [
         info: [
         ],
         tags: ['state', 'setState'],
-        img: ''
+        img: './assets/28.png'
     }, {
         id: 40,
         title: 'Components lifecycle (nomes class components)',
         info: [
         ],
         tags: ['lifecycle', 'mounting', 'unmounting', 'updating'],
-        img: ''
+        img: './assets/29.png'
     },
      {
         id: 41,
@@ -367,14 +385,14 @@ const data = [
         info: [
         ],
         tags: ['mounting', 'constructor', 'getDerivedStateFromProps', 'componentDidMount', 'render'],
-        img: ''
+        img: './assets/30.png'
     }, {
         id: 42,
         title: 'Components lifecycle: mounting',
         info: [
         ],
         tags: ['mounting example', 'mounting', 'constructor', 'getDerivedStateFromProps', 'componentDidMount', 'render'],
-        img: ''
+        img: './assets/31.png'
     }
     , {
         id: 43,
@@ -382,30 +400,21 @@ const data = [
         info: [
         ],
         tags: ['updating',  'getDerivedStateFromProps',  'render', 'shouldComponentUpdate', 'getSnapshotBeforeUpdate', 'componentDidUpdate'],
-        img: ''
+         img: './assets/32.png'
     } , {
         id: 44,
         title: 'Components lifecycle: updating example',
         info: [
         ],
         tags: ['updating',  'getDerivedStateFromProps',  'render', 'shouldComponentUpdate', 'getSnapshotBeforeUpdate', 'componentDidUpdate'],
-        img: ''
+         img: './assets/33.png'
     } , {
-        id: 45,
-        title: 'Components lifecycle: unmounting',
-        info: [
-            'componentWillUnmount:  Quan el component es apunt de ser destruit del DOM',
-            
-        ],
-        tags: ['unmounting', 'componentWillUnmount'],
-        img: ''
-    }, {
         id: 46,
         title: 'Components lifecycle: updating example',
         info: [
         ],
         tags: ['updating',  'getDerivedStateFromProps',  'render', 'shouldComponentUpdate', 'getSnapshotBeforeUpdate', 'componentDidUpdate'],
-        img: ''
+        img: './assets/34.png'
     } , {
         id: 47,
         title: 'Components lifecycle: unmounting',
@@ -421,7 +430,7 @@ const data = [
         info: [
         ],
         tags: ['unmounting',  'componentWillUnmount'],
-        img: ''
+        img: './assets/35.png'
     } , {
         id: 49,
         title: 'React-router-dom per rutes i pàgines',
@@ -437,14 +446,14 @@ const data = [
         info: [
         ],
         tags: [  'rutes estàtiques'],
-        img: ''
+        img: './assets/36.png'
     } , {
         id: 51,
         title: 'rutes dinàmiques',
         info: [
         ],
         tags: ['rutes dinàmiques'],
-        img: ''
+        img: './assets/37.png'
     }, {
         id: 52,
         title: 'Rutes dinàmiques consultar el param a la página',
@@ -459,7 +468,7 @@ const data = [
             
         ],
         tags: ['errors'],
-        img: ''
+        img: './assets/38.png'
     }, {
         id: 54,
         title: 'Errors, que fer?',
@@ -474,7 +483,7 @@ const data = [
         info: [
         ],
         tags: [  'rutes dinàmiques params'],
-        img: ''
+        img: './assets/39.png'
     } , {
         id: 56,
         title: 'Hooks: usestate',
@@ -483,7 +492,7 @@ const data = [
 
         ],
         tags: ['hooks', 'useState'],
-        img: ''
+         img: './assets/40.png'
     }, {
         id: 57,
         title: 'Hooks: useeffect',
@@ -491,7 +500,7 @@ const data = [
             'Si, useState substitueix a state en functional components, useEffect ve a fer les tasques del componentDidMount. Es un métode que s’executa cada vegada que el component es renderitza i/o s’actualitza'
         ],
         tags: ['Hooks useeffect'],
-        img: ''
+        img: './assets/41.png'
     }, {
         id: 58,
         title: 'Hooks: altres',
@@ -499,7 +508,7 @@ const data = [
             'Hi ha més hooks, però no podem cobrir-los tots per falta de temps, adjunto link amb info de la resta de hooks i un petit tutorial que crec es molt útil.'
         ],
         tags: [  'Hooks: altres'],
-        img: ''
+        
     } , {
         id: 59,
         title: 'Hooks: Custom hooks',
@@ -509,7 +518,7 @@ const data = [
 
         ],
         tags: ['Hooks: Custom hooks'],
-        img: ''
+       img: './assets/42.png'
     },
     {
           id: 60,

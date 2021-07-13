@@ -1,11 +1,6 @@
 
 const searchComponent = ({filterMethod}) =>{
 
-
-    const searchChanged = (ev) =>{
-        console.log('search changed', ev.target.value)
-    }
-
     return (
         <div className="input-group mb-3">
             <div className="input-group-prepend">
@@ -13,7 +8,7 @@ const searchComponent = ({filterMethod}) =>{
             </div>
             <input
              onKeyUp={  filterMethod }  
-             type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+             type="text" className="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon1" />
         </div>
     )
 }
