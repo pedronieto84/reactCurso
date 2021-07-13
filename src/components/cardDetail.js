@@ -1,29 +1,43 @@
-import React from 'react';
-
-
+import {Link } from 'react-router-dom'
 const CardDetailComponent = (props) => {
     
-    const clickedCardDetail = ()=>{
-      console.log('clicked card detail')
-    }
     return (
       < >
-        <div onClick={clickedCardDetail} className="card" >
-            <div className="card-body">
-            <h5 className="card-title">{props.info.title}</h5>
 
+      <div className="jumbotron text-center">
+  <h1 className="display-4">{props.title}</h1>
+   <hr className="my-4" />
+
+  <ul className="list-group list-group-flush">
             {
-              props.info.info.map(( each, index )=> {
+              props.info.map(( each, index )=> {
                   return (
                      <div key={ index.toString() }>
-                      <p> { each }</p>
+                      <li className="list-group-item"> { each }</li>
                     </div>
                   )
               })
             }
-            <p className="card-text">{props.info.info}</p>
-            </div>
-      </div>
+</ul>
+
+<ul>
+            {
+                props.tags.map(( each, index )=> {
+                  return (
+                     <span  className="p-5" key={ index.toString() }>
+                      <span className="badge badge-pill badge-info"> { each }</span>
+                    </span>
+                  )
+              })
+            }
+ </ul>
+
+    <p className="lead">
+    
+    <Link className="fixed-bottom btn btn-primary btn-lg" to={'/'}>Tornar</Link>
+  </p>
+</div>
+       
     
       </>
       )
