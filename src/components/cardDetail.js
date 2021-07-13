@@ -1,18 +1,27 @@
 import React from 'react';
 
 
-const CardDetailComponent = ({ childToParent }) => {
+const CardDetailComponent = (props) => {
     
-    
+    const clickedCardDetail = ()=>{
+      console.log('clicked card detail')
+    }
     return (
-      <>
-        <div className="card" >
+      < >
+        <div onClick={clickedCardDetail} className="card" >
             <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a  className="card-link">Card link</a>
-            <a   className="card-link">Another link</a>
+            <h5 className="card-title">{props.info.title}</h5>
+
+            {
+              props.info.info.map(( each, index )=> {
+                  return (
+                     <div key={ index.toString() }>
+                      <p> { each }</p>
+                    </div>
+                  )
+              })
+            }
+            <p className="card-text">{props.info.info}</p>
             </div>
       </div>
     

@@ -259,7 +259,7 @@ const data = [
         id: 28,
         title: 'Importar css framework',
         info: [
-            'El més còmode/habitual es fer servir un css framework per augmentar la productivitat. (Material Design, Bootstrap…)',
+            'El més còmode/habitual es fer servir un css framework per augmentar la productivitat. (Material, Bootstrap…)',
             'https://getbootstrap.com/',
             'https://material.io/design',
             'https://geekflare.com/es/best-css-frameworks/'
@@ -312,29 +312,6 @@ const data = [
         info: [
         ],
         tags: ['passar props component de clase'],
-        img: ''
-    }, {
-        id: 35,
-        title: 'PROPS EXEMPLE rebre props a COMPONENT de clase',
-        info: [
-
-        ],
-        tags: ['rebre props component de clase'],
-        img: ''
-    }, {
-        id: 36,
-        title: 'De fill a pare: component pare',
-        info: [
-        ],
-        tags: ['de fill a pare'],
-        img: ''
-    },
-     {
-        id: 37,
-        title: 'De fill a pare: component fill',
-        info: [
-        ],
-        tags: ['de fill a pare', 'component fill'],
         img: ''
     }, {
         id: 35,
@@ -519,8 +496,7 @@ const data = [
         id: 58,
         title: 'Hooks: altres',
         info: [
-            'Hi ha més hooks, però no podem cobrir-los tots per falta de temps, adjunto link amb info de la resta de hooks i un petit tutorial que crec es molt útil.
-'
+            'Hi ha més hooks, però no podem cobrir-los tots per falta de temps, adjunto link amb info de la resta de hooks i un petit tutorial que crec es molt útil.'
         ],
         tags: [  'Hooks: altres'],
         img: ''

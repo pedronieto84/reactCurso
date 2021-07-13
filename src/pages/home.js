@@ -15,16 +15,16 @@ class HomeComponent extends Component {
           <>
               <div className="container">      
               <div className="row">
-{
-    numbers.map(el =>  (  <div className="col-sm" key={el} >
-                <CardDetailComponent detail={el}/>
-        </div>)
-      
-    
-    )
-              
+            {
+                            numbers.map(el =>  (  <div className="col-sm" key={el} >
+                                        <CardDetailComponent detail={el}/>
+                                </div>)
+                            
+                            
+                            )
+                        
 
-}
+            }
          
             
             </div> 

@@ -19,15 +19,46 @@ class App extends React.Component {
   }
 
   filterMethod = (ev) =>{
-        console.log('search changed', ev.target.value);
-        this.setState({
-          dataFiltered: this.state.dataInitial.filter(( each )=>{
-              return each.b === ev.target.value
+
+        
+        const removeAccents = (str) => {
+          return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        } 
+
+        
+        const resetToAll = () => {
+          return this.state.dataInitial
+        }
+
+        const filterStrings = (eachItem, value) => {
+       
+          const tagsAdded = ( eachItem.tags.length > 0 ) ? eachItem.tags.reduce(( a, b )=> a + ' ' + b ) : ' '
+          const infoAdded = (eachItem.info.length > 0 ) ?  eachItem.info.reduce((a, b)=> a + ' ' + b) : ' '
+          const stringAllTogether = `${tagsAdded} ${infoAdded} ${eachItem.title}`
+          const stringWithoutAccents = removeAccents(stringAllTogether)
+          return stringWithoutAccents.includes(value)
+     
+        }
+
+
+        const filter = () => {
+          return this.state.dataInitial.filter(( each ) => {
+              return filterStrings(each, ev.target.value)
           })
+        }
+
+
+
+        console.log('search changed', ev.target.value);
+        console.log('type of', ev.target.value)
+        this.setState({
+          dataFiltered: ev.target.value ?  filter() : resetToAll()
         })
-        
-        
     }
+
+
+  
+ 
 
   render (){
         console.log('render')
@@ -36,9 +67,9 @@ class App extends React.Component {
             whatToShow = this.state.dataFiltered.map((each) => {
                   console.log('each', each)
                   return (
-                    <div key={ each.id.toString() } >
-                      <CardDetailComponent info={ each } />
-                    </div>
+                    <>
+                      <li key={ each.id.toString() } className="list-group-item">{each.title}</li>
+                    </>
                   )
             })
         } else{
@@ -47,7 +78,17 @@ class App extends React.Component {
     return (
           <>
           <SearchComponent filterMethod={ this.filterMethod } />
-          { whatToShow }
+          <div className="container">
+          <div className="row">
+            <div>
+              <ul className="list-group">
+              { whatToShow }
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+          
           </>
          
     )
