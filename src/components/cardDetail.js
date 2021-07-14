@@ -3,12 +3,11 @@ const CardDetailComponent = (props) => {
     
     return (
       < >
-
       <div className="jumbotron text-center">
-  <h1 className="display-4">{props.title}</h1>
-   <hr className="my-4" />
+      <h1 className="display-4">{props.title}</h1>
+      <hr className="my-4" />
 
-  <ul className="list-group list-group-flush">
+      <ul className="list-group list-group-flush">
             {
               props.info.map(( each, index )=> {
                   return (
@@ -18,9 +17,9 @@ const CardDetailComponent = (props) => {
                   )
               })
             }
-</ul>
+      </ul>
 
-<ul>
+      <ul>
             {
                 props.tags.map(( each, index )=> {
                   return (
@@ -30,15 +29,13 @@ const CardDetailComponent = (props) => {
                   )
               })
             }
- </ul>
-    <img src={ props.img } />
-    <p className="lead">
-    
-    <Link className="fixed-bottom btn btn-primary btn-lg" to={'/'}>Tornar</Link>
-  </p>
-</div>
-       
-    
+      </ul>
+          <img src={ props.img } />
+          <p className="lead">
+          
+          <Link className="fixed-bottom btn btn-primary btn-lg" to={'/'}>Tornar</Link>
+        </p>
+      </div>
       </>
       )
   }

@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react'
 
-import CardDetailPage from './pages/cardDetail';
-
 import { BrowserRouter as Router, Switch, Route,  } from 'react-router-dom';
+
 import HomePage from './pages/home';
+import CardDetailPage from './pages/cardDetailPage';
 
 class App extends React.Component {
 
@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-  <Switch>
+     <Switch>
      
        <Route exact path="/:title">
         <CardDetailPage />
@@ -23,8 +23,6 @@ class App extends React.Component {
       
       </Switch>
       </Router>
-    
-   
     )
   }
 }

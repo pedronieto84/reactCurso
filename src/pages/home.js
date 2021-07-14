@@ -6,12 +6,12 @@ import { Link  } from 'react-router-dom';
 
 class HomePage extends Component {
 
-      constructor(){
+  constructor(){
     super()
     this.state = {
       data:[]
     };
-  }
+    }
 
   componentDidMount(){
      const jsonData = data;
@@ -19,7 +19,6 @@ class HomePage extends Component {
   }
 
   filterMethod = (ev) =>{
-
         const removeAccents = (str) => {
           return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         } 
@@ -50,7 +49,6 @@ class HomePage extends Component {
 
 
   render (){
-        console.log('render')
           let whatToShow;
           if(this.state && this.state.dataFiltered && ( this.state.dataFiltered.length > 0 ) ){
             whatToShow = this.state.dataFiltered.map((each) => {
@@ -58,9 +56,7 @@ class HomePage extends Component {
                   return (
                     <>
                       <li 
-                        
                         key={ each.id.toString() } className="list-group-item text-center">
-
                         <Link to={`/${each.id.toString()}`}>{each.title}</Link>
                       </li>
                     </>
@@ -69,21 +65,21 @@ class HomePage extends Component {
         } else{
           whatToShow = ( <h1>No hi ha res</h1>)
         }
-    return (
-          <>
-          <SearchComponent filterMethod={ this.filterMethod } />
-          <div className="container">
-          <div className="row">
-            <div>
-              <ul className="list-group">
-              { whatToShow }
-              </ul>
+
+      return (
+            <>
+            <SearchComponent filterMethod={ this.filterMethod } />
+            <div className="container">
+            <div className="row">
+              <div>
+                <ul className="list-group">
+                { whatToShow }
+                </ul>
+              </div>
             </div>
-          </div>
-          </div>
-          </>
-         
-    )
+            </div>
+            </>
+          )
   }
   }
 

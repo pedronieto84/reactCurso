@@ -7,7 +7,7 @@ const searchComponent = ({filterMethod}) =>{
                 <span className="input-group-text" id="basic-addon1">Buscar</span>
             </div>
             <input
-             onKeyUp={  filterMethod }  
+             onKeyUp={ filterMethod }  
              type="text" className="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon1" />
         </div>
     )
